@@ -22,7 +22,45 @@
           <span>Voltar</span>
         </div>
         <h1>Formulário de matrícula</h1>
-        <p>Preencha os dados abaixo para matricular seu filho(a) na escola de educação infantil <strong>Estrelas do Amanhã</strong></p>
+        <p>Preencha os dados abaixo para matricular seu filho(a) na escola de educação infantil <strong>Estrelas do
+            Amanhã</strong></p>
+
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="child-info">
+            <legend>Informações da criança</legend>
+
+            <div class="input-wrapper">
+              <label for="fullname">Nome Completo</label>
+              <input id="fullname" name="fullname" type="text" placeholder="Nome da criança">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="birth">Data de nascimento</label>
+              <input type="date" id="birth" name="birth" lang="pt-br">
+            </div>
+
+            <div class="select-wrapper">
+              <label for="gender">Sexo</label>
+              <select id="gender" name="gender">
+                <option value="female">Feminino</option>
+                <option value="male">Masculino</option>
+                <option value="na">Prefiro não responder</option>
+              </select>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="medical-info">Informações médicas</label>
+              <textarea name="medical-info" id="medical-info" cols="30" rows="10"
+                placeholder="A criança possui alguma condição médica que a escola deve estar ciente? se sim, explique-a."></textarea>
+
+              <div class="droparea-wrapper">
+                <input type="file" id="birth-file" name="birth-file">
+                <img src="assets/icons/cloud-upload.svg" alt="ícone de 'upload de arquivos para a núvem'">
+                <p>clique aqui para selecionar os arquivosF</p>
+              </div>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </main>
 
@@ -31,10 +69,12 @@
         <header>
           <img src="assets/logo.svg" alt="logomarca da escola estrelas do amanhã">
           <h2>Porque cada momento de <strong>aprendizado</strong> conta</h2>
-          <p>inscreva seu filho(a) em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+          <p>inscreva seu filho(a) em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.
+          </p>
         </header>
 
-        <img src="assets/Illustration.svg" alt="ilustração de crianças aprendendo com uma professora num ambiente amigável e feliz">
+        <img src="assets/Illustration.svg"
+          alt="ilustração de crianças aprendendo com uma professora num ambiente amigável e feliz">
       </div>
     </aside>
   </div>
